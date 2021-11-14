@@ -16,6 +16,10 @@ export const Container = styled.div`
     
 `;
 
+export const Logo = styled.h1`
+    cursor: pointer;
+`
+
 export const FloatLeft = styled.div`
     float: left;
 `;

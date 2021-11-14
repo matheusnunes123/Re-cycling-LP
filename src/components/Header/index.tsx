@@ -1,13 +1,13 @@
 
 
 import Button from '../Button';
-import { Container, FloatLeft, FloatRight,Loginbtn } from './styles';
+import { Container, FloatLeft, FloatRight,Loginbtn, Logo } from './styles';
 
 function Header() {
   return (
     <Container>
       <FloatLeft>
-        <h1 className='Logo'>Re-Cycling</h1>
+        <Logo>Re-Cycling</Logo>
       </FloatLeft>
       <FloatRight>
         <Loginbtn>Entrar</Loginbtn>
