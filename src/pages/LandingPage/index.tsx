@@ -1,9 +1,10 @@
 
 import Header from '../../components/Header';
 import RecyclingBro from '../../assets/Recycling-bro.svg';
+import RecyclingPana from '../../assets/Recycling-pana.svg';
 
 
-import { Container, Section1, Img, Title,Desc } from './styles';
+import { Container, Section1,Section2, Img, Title,Desc } from './styles';
 
 
 
@@ -24,6 +25,20 @@ function LandingPage() {
           <Img src={RecyclingBro}/>
         </div>
       </Section1>
+
+      <Section2>
+        <div>
+          <Title>
+          Torne-se um colaborador e ajude o mundo.
+          </Title>
+          <Desc>
+          Na Re-cycling, você Incentiva os seus clientes a Realizarem Entregas de Recicláveis enquanto vende mais Produtos.
+          </Desc>
+        </div>
+        <div>
+          <Img src={RecyclingPana}/>
+        </div>
+      </Section2>
     </Container>
   );
 };

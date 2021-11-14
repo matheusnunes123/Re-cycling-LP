@@ -9,7 +9,6 @@ export const Container = styled.button`
     border-radius: 20px;
     font-size: 20px;
     color: white;
-    margin-left: 16px;
     border: 0px transparent solid;
     width: 250px;
     cursor: pointer;

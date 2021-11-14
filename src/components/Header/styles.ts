@@ -13,7 +13,15 @@ export const Container = styled.div`
     -webkit-box-shadow: 0px 10px 16px -9px #B2B2B2; 
     box-shadow: 0px 10px 16px -9px #B2B2B2;
     width: 100%;
+    flex-wrap: wrap;
     
+
+    @media(max-width: 900px) {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        align-content: center;
+    }
 `;
 
 export const Logo = styled.h1`
@@ -22,12 +30,21 @@ export const Logo = styled.h1`
 
 export const FloatLeft = styled.div`
     float: left;
+    @media(max-width: 900px) {
+        flex-direction: column;
+        margin-top: 8px;
+    }
 `;
 
 export const FloatRight = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media(max-width: 900px) {
+        flex-direction: column;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
 `;
 
 
@@ -45,5 +62,10 @@ export const Loginbtn = styled.a`
     &:hover{    
         border: solid 1px #4FCD90;
         transition: 0.5s;
+    }
+
+    @media(max-width: 900px) {
+        flex-direction: column;
+        margin-right: 0px;
     }
 `
