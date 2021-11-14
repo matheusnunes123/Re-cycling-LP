@@ -73,7 +73,7 @@ function LandingPage() {
         </div>
       </Section4>
       <Footer>
-        <div></div>
+        Re-cycling © All Rights Reserved.
       </Footer>
     </Container>
   );

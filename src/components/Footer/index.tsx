@@ -9,7 +9,6 @@ interface FooterProps {
 function Footer({ children }: FooterProps) {
   return (
     <Container>
-      <h1>Footer</h1>
       {children}
     </Container>
   );
