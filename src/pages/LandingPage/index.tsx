@@ -2,9 +2,14 @@
 import Header from '../../components/Header';
 import RecyclingBro from '../../assets/Recycling-bro.svg';
 import RecyclingPana from '../../assets/Recycling-pana.svg';
+import HandSvg from '../../assets/handSvg.svg';
+import RegisterSvg from '../../assets/RegisterSvg.svg';
+import graphicsSvg from '../../assets/graphicsSvg.svg';
+import announcementSvg from '../../assets/announcementSvg.svg';
 
 
-import { Container, Section1,Section2, Img, Title,Desc } from './styles';
+import { Container, Section1,Section2,Section3, Img, Title,Desc,CardsDiv } from './styles';
+import Card from '../../components/Card';
 
 
 
@@ -39,6 +44,16 @@ function LandingPage() {
           <Img src={RecyclingPana}/>
         </div>
       </Section2>
+      <Section3>
+        <Title>
+            Sua Empresa terá diversos Benefícios
+        </Title>
+        <CardsDiv>
+          <Card img={HandSvg} title='Reconhecimento' desc='Sua empresa será vista como uma empresa verde e será uma atuante do processo de reciclagem no Brasil.'/>
+          <Card img={HandSvg} title='Reconhecimento' desc='Sua empresa será vista como uma empresa verde e será uma atuante do processo de reciclagem no Brasil.'/>
+          <Card img={HandSvg} title='Reconhecimento' desc='Sua empresa será vista como uma empresa verde e será uma atuante do processo de reciclagem no Brasil.'/>
+        </CardsDiv>
+      </Section3>
     </Container>
   );
 };
