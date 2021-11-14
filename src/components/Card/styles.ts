@@ -13,7 +13,12 @@ export const Container = styled.div`
     border-radius: 20px;
     margin: 10px;
     -webkit-box-shadow: 15px 17px 50px -6px rgba(0,0,0,0.42); 
-box-shadow: 15px 17px 50px -6px rgba(0,0,0,0.42);
+    box-shadow: 15px 17px 50px -6px rgba(0,0,0,0.42);
+
+
+    @media (max-width:450px){
+        width: 100%;
+    }
 `;
 
 export const CardImg = styled.img`
@@ -27,6 +32,10 @@ export const Title = styled.div`
     color: #4FCD90;
     margin-top: 16px;
     font-size: 24px;
+    font-weight: 500;
+    @media (max-width:450px){
+        font-size: 16px;
+    }
 `
 export const Desc = styled.div`
     text-align: center;

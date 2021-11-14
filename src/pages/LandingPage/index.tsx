@@ -8,8 +8,10 @@ import graphicsSvg from '../../assets/graphicsSvg.svg';
 import announcementSvg from '../../assets/announcementSvg.svg';
 
 
-import { Container, Section1,Section2,Section3, Img, Title,Desc,CardsDiv } from './styles';
+import { Container, Section1,Section2,Section3, Img, Title,Desc,CardsDiv, Section4,AlinharBotao } from './styles';
 import Card from '../../components/Card';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
 
 
 
@@ -50,10 +52,29 @@ function LandingPage() {
         </Title>
         <CardsDiv>
           <Card img={HandSvg} title='Reconhecimento' desc='Sua empresa será vista como uma empresa verde e será uma atuante do processo de reciclagem no Brasil.'/>
-          <Card img={HandSvg} title='Reconhecimento' desc='Sua empresa será vista como uma empresa verde e será uma atuante do processo de reciclagem no Brasil.'/>
-          <Card img={HandSvg} title='Reconhecimento' desc='Sua empresa será vista como uma empresa verde e será uma atuante do processo de reciclagem no Brasil.'/>
+          <Card img={announcementSvg} title='Anúncios' desc='Você poderá anunciar cupons de descontos de seus produtos ou serviços, estes que os usuários do Re-cycling resgatarão.'/>
+          <Card img={graphicsSvg} title='Estatísticas' desc='Como empresa, você terá acesso a estatísticas de vendas dos cupons de desconto que fornece, acessos, etc.'/>
         </CardsDiv>
       </Section3>
+      <Section4>
+        <div>
+          <Title>
+          Crie sua Conta!
+          </Title>
+          <Desc>
+          Se junte ao Re-cycling no combate a poluição, incentivando a reciclagem!
+          </Desc>
+          <AlinharBotao>
+            <Button text='Cadastre-se'/>
+          </AlinharBotao>
+        </div>
+        <div>
+          <Img src={RegisterSvg}/>
+        </div>
+      </Section4>
+      <Footer>
+        <div></div>
+      </Footer>
     </Container>
   );
 };

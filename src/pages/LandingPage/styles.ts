@@ -36,6 +36,7 @@ export const Desc = styled.p`
     width: 500px;
     font-size:16px;
     line-height: 24px;
+    margin-bottom: 16px;
     @media(max-width: 1250px) {
         width: 100%;
         text-align: center;
@@ -110,15 +111,27 @@ export const Section4 = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    background: #4FCD90;
+    background: #FEFEFE;
     justify-content: center;
     align-items: center;
     height: 88vh;
     padding-left: 10%;
     padding-right: 10%;
-    color: white;
+    color: #423F3F;
     align-content: center;
-    @media(max-width: 1000px) {
-        
+    @media (max-width: 1251px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 `;
+
+export const AlinharBotao = styled.div`
+    display: flex;
+    @media (max-width: 1251px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+`
